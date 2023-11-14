@@ -79,7 +79,7 @@ jobs:
         echo "::add-mask::$CLUSTER_URL" 
 
     - name: Check if secrets exists
-      uses: actions/github-script@v3
+      uses: actions/github-script@v7
       with:
         script: |
           const secrets = {
